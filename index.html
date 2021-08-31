@@ -1,2 +1,58 @@
-koira
-test
+<!DOCTYBE html>
+<html lang="fi">
+
+<head>
+
+    <title>title on tämä</title>
+
+
+</head>
+<body>
+
+
+<h1>click cookie yeah</h1>
+<img onclick="Painanta()" src="cookie.png" alt="" id="keksikuva">
+
+
+
+<video id="cookieloop" width="320" height="176">
+    <source src="cookieloop&muc.mp4" type="video/mp4">
+  </video>
+
+
+
+
+
+<p> keksi maara <p id="numero"> 0 </p> liikaa kekseja </p>
+
+<script>
+    let klikkaukset = 0
+
+    function Painanta(){
+    klikkaukset++
+        document.getElementById("numero").innerHTML = klikkaukset
+
+        if(klikkaukset == 5){
+            document.getElementById("keksikuva").src = "cookie2.png"
+            alert ("WOah")
+        }
+            
+        else(klikkaukset > 10);{
+            document.getElementById("cookieloop").src = "cookieloop&muc.mp4"
+             
+ 
+        }
+        
+
+     
+    }
+    var vid = document.getElementById("cookieloop"); 
+    vid.autoplay = true
+    vid.loop = true
+    
+</script>
+
+
+
+</body>
+</html>
